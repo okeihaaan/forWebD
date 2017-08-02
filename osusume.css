@@ -1,0 +1,312 @@
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+
+pre, textarea {
+    overflow: auto
+}
+[hidden], audio:not([controls]), template {
+    display: none
+}
+details, main, summary {
+    display: block
+}
+input[type=number] {
+    width: auto
+}
+input[type=search] {
+    -webkit-appearance: textfield
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+progress {
+    display: inline-block
+}
+textarea {
+    resize: vertical
+}
+[unselectable] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+    border-style: solid;
+    border-width: 0
+}
+* {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0
+}
+::after, ::before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+:root {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    cursor: default;
+    font: 16px/1.5 sans-serif;
+    text-rendering: optimizeLegibility
+}
+a {
+    text-decoration: none
+}
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle
+}
+button, input, select, textarea {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    min-height: 1.5em
+}
+code, kbd, pre, samp {
+    font-family: monospace, monospace
+}
+nav ol, nav ul {
+    list-style: none
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+select::-ms-expand {
+    display: none
+}
+select::-ms-value {
+    color: currentColor
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+::-moz-selection {
+    background-color: #B3D4FC;
+    text-shadow: none
+}
+::selection {
+    background-color: #B3D4FC;
+    text-shadow: none
+}
+@media screen {
+    [hidden~=screen] {
+        display: inherit
+    }
+    [hidden~=screen]:not(:active):not(:focus):not(:target) {
+        clip: rect(0 0 0 0)!important;
+        position: absolute!important
+    }
+}
+
+/*# sourceMappingURL=sanitize.css.map */
+
+
+/*メモ
+◎基本色
+○背景　白 #fff
+○文字　茶色 #563743
+○アクセント　水色 #0BACD3 rgb(11, 172, 211) http://www.colorhexa.com/0bacd3
+○フォント
+　ヘッダー見出し josefinsans
+　その他 游ゴシック
+*/
+
+
+/*共通設定*/
+
+html {
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html body {
+    margin: 0;
+    padding: 0;
+    color: #563743;
+    font-family: "游ゴシック", "YuGothic";
+    text-align: left;
+    background-color: #fff;
+    background: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+html body a {
+    color:
+}
+html a:hover {}
+h1 {
+    padding-left: 4vw;
+    font-weight: 600;
+}
+h2 {
+    padding-left: 4vw;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 130%;
+    border-bottom: 3px dotted #444;
+}
+h3 {
+    padding-left: 4vw;
+}
+p {
+    padding-left: 4vw;
+}
+a {
+    padding-left: 4vw;
+    color: #AA25FF;
+    font-weight: 500;
+}
+li{
+  list-style: none;
+}
+
+/*ヘッダー*/
+header{
+  width: 100%;
+  height: 75vh;
+  background: url("./img/top.jpg") no-repeat center;
+  -webkit-background-size: 70%;
+  background-size: 70%;
+  background-position-y: 23vh;
+}
+
+
+.top {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+.title {
+    width: 100vw;
+    position: fixed;
+    padding-top: 0;
+    padding: 0;
+    background-color: #7CBDED;
+    border-bottom: 2px solid #0BACD3;
+    z-index: 2;
+}
+.title h1{
+  padding-left: 4vw;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-size: 260%;
+}
+
+
+/*メニュー*/
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: #8E91FC;
+    margin: 0;
+    padding: 0.3vw 4vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 2:
+}
+nav li {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+    list-style: none;
+    display: inline;
+    padding: 0 1vw;
+}
+nav a {
+    padding: 0;
+    color: #fff;
+    font-weight: 700;;
+    text-decoration: none;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    text-align: center;
+    display: inline;
+}
+nav a:hover {
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.8s;
+}
+
+/*メイン*/
+.main{
+  position: relative;
+  top: 5vh;
+  z-index: 1;
+}
+
+.main a {
+    text-decoration: none;
+}
+.main a:hover {
+    font-weight: 500;
+    font-size: 110%;
+    transition: 1s;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: block;
+  margin: 15px;
+  max-width: 220px;
+  text-align: center;
+  /*background-color: ;*/
+}
+
+/*まとめ*/
+
+
+/*ツール*/
+
+
+/*カラーパレット*/
+
+
+/*素材検索*/
+
+
+/*ネットに公開*/
+
+
+/*勉強サイト*/
+
+
+/*フッター*/
+
+.footer {
+    margin-top: 30px;
+    padding: 8px;
+    padding-top: 5px;
+    background-color: #7CBDED;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer p {
+    color: #fff;
+}
